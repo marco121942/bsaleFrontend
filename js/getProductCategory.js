@@ -1,5 +1,5 @@
  function getProductsCategory() {
-     fetch('http://localhost:8000/api/v1/get/productCategory', {
+     fetch('https://immense-retreat-18593.herokuapp.com/api/v1/get/productCategory', {
              method: 'GET',
          }).then(data => data.json())
          .then((response) => assembleProductCategory(response.data))

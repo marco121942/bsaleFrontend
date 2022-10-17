@@ -4,7 +4,7 @@ function searchProduct() {
     if (inputValue.length > 2) {
         const data = new FormData();
         data.append('keyword', inputValue);
-        fetch('http://localhost:8000/api/v1/search/product', {
+        fetch('https://immense-retreat-18593.herokuapp.com/api/v1/search/product', {
                 method: 'POST',
                 body: data
             }).then(data => data.json())

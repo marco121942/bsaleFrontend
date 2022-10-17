@@ -6,7 +6,7 @@ function filterProduct() {
     const data = new FormData();
     data.append('typeFilter', apartChecked[1]);
     data.append('dataFilter', apartChecked[0]);
-    fetch('http://localhost:8000/api/v1/filter/product', {
+    fetch('https://immense-retreat-18593.herokuapp.com/api/v1/filter/product', {
             method: 'POST',
             body: data
         }).then(data => data.json())

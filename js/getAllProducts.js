@@ -1,5 +1,5 @@
   function getProducts() {
-      fetch('http://localhost:8000/api/v1/get/product', {
+      fetch('https://immense-retreat-18593.herokuapp.com/api/v1/get/product', {
               method: 'GET',
           }).then(data => data.json())
           .then((response) => assembleProduct(response.data))
