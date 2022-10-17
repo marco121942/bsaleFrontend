@@ -1,0 +1,112 @@
+ body {
+     font-family: sans-serif;
+     background: linear-gradient(45deg, rgb(236, 236, 236), rgb(175, 175, 175), rgb(214, 214, 214), rgb(134, 134, 134));
+     background-size: 400% 400%;
+     position: relative;
+     animation: cambiar 10s ease-in-out infinite;
+ }
+ 
+ @keyframes cambiar {
+     0% {
+         background-position: 0 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0 50%;
+     }
+ }
+ 
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+     background: #888;
+ }
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+ }
+ 
+ .search-box {
+     position: relative;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .search-input {
+     width: 600px;
+     height: 40px;
+     border-radius: 10px;
+     border: 0;
+     background: #ffffff;
+     padding: 10px 20px;
+     font-size: 18px;
+     outline: none;
+ }
+ 
+ .result-list.show {
+     position: absolute;
+     width: 640px;
+     max-height: 250px;
+     overflow-y: auto;
+     list-style: none;
+     background: #fff;
+     padding: 0;
+     top: 40px;
+     border-radius: 10px;
+     box-shadow: 1px 2px 8px 0px #b5b5b5;
+     z-index: 9;
+ }
+ 
+ .result-list.hide {
+     display: none;
+ }
+ 
+ .result-item {
+     border-bottom: 1px solid #ececec;
+ }
+ 
+ .result-link {
+     text-decoration: none;
+     color: #333;
+     display: block;
+     padding: 10px 15px;
+ }
+ 
+ .result-link:hover {
+     background: #f9f9f9;
+ }
+ 
+ .result-title {
+     font-size: 20px;
+     font-weight: 600;
+ }
+ 
+ .result-content {
+     font-size: 18px;
+ }
+ 
+ .arrow-slider-product {
+     width: 50px;
+     height: 100px;
+     border: 1px solid #424141;
+     border-radius: 10px;
+     background: #fff !important;
+     opacity: 3;
+ }
+ 
+ .arrow-product-slider-prev {
+     left: -25px;
+ }
+ 
+ .arrow-product-slider-next {
+     right: -25px;
+ }

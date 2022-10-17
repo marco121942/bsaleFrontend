@@ -14,8 +14,6 @@ function searchProduct() {
         input.classList.remove('show');
         input.classList.add('hide');
     }
-
-
 }
 
 function dataManagement(data) {
@@ -47,6 +45,4 @@ function dataManagement(data) {
         input.classList.add('hide');
 
     }
-    console.log(data)
-
 }

@@ -5,107 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Prueba</title>
+    <title>Prueba - Marco Antonio Sotomayo Lopez</title>
     <!-- librerias -CSS -->
     <link rel="stylesheet" href="./library/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./library/splide-4.1.3/dist/css/splide.min.css">
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-        
-         ::-webkit-scrollbar {
-            width: 10px;
-        }
-        
-         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        
-         ::-webkit-scrollbar-thumb {
-            background: #888;
-        }
-        
-         ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-        
-        .search-box {
-            position: relative;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        .search-input {
-            width: 600px;
-            height: 40px;
-            border-radius: 10px;
-            border: 0;
-            background: #eeeeee;
-            padding: 10px 20px;
-            font-size: 18px;
-            outline: none;
-        }
-        
-        .result-list.show {
-            position: absolute;
-            width: 640px;
-            max-height: 250px;
-            overflow-y: auto;
-            list-style: none;
-            background: #fff;
-            padding: 0;
-            top: 40px;
-            border-radius: 10px;
-            box-shadow: 1px 2px 8px 0px #b5b5b5;
-            z-index: 9;
-        }
-        
-        .result-list.hide {
-            display: none;
-        }
-        
-        .result-item {
-            border-bottom: 1px solid #ececec;
-        }
-        
-        .result-link {
-            text-decoration: none;
-            color: #333;
-            display: block;
-            padding: 10px 15px;
-        }
-        
-        .result-link:hover {
-            background: #f9f9f9;
-        }
-        
-        .result-title {
-            font-size: 20px;
-            font-weight: 600;
-        }
-        
-        .result-content {
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <div class="container p-4">
+    <div class="container   p-4">
         <div class="search-box">
-            <input class="search-input" type="text" id="query" onkeyup="searchProduct()" placeholder="Busque su producto ...">
+            <input class="search-input" type="text" id="query" onkeyup="searchProduct()" placeholder="Busque su producto ... ejm:'pisco'">
             <ul class="result-list hide" id="content-result">
-
-
-
             </ul>
         </div>
     </div>
 
     <div class="container mt-5 mb-5 ">
-        <p class='fs-2 text-uppercase fw-semibold'>TODOS LOS PRODUCTOS 123456</p>
+        <div class="card mb-2 text-center">
+            <p class='fs-2 text-uppercase fw-semibold mt-2'>TODOS LOS PRODUCTOS</p>
+        </div>
+
         <div class="card mb-2">
             <article class="card-group-item">
                 <header class="card-header">
@@ -197,7 +118,7 @@
 
             </article>
         </div>
-        <div class="splide " aria-label="All Products" id="products">
+        <div class="splide mt-4" aria-label="All Products" id="products">
             <div class="splide__track">
                 <ul class="splide__list" id="productsContainer">
                 </ul>

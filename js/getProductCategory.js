@@ -10,7 +10,7 @@
          var contenedorSlider = '';
 
          data.forEach((category, index) => {
-             contenedorSlider += "<div class='mt-5 mb-5'><p class='fs-2 text-uppercase fw-semibold'>" + category.name + "</p><div class='splide' aria-label='All Products' id='categoryProducts" + index + "'><div class='splide__track'> <ul class='splide__list'>"
+             contenedorSlider += "<div class='mt-5 mb-5'> <div class='card mb-2 text-center'><p class='fs-2 text-uppercase fw-semibold mt-2'>" + category.name + "</p></div><div class='splide' aria-label='All Products' id='categoryProducts" + index + "'><div class='splide__track'> <ul class='splide__list'>"
 
              category.products.forEach((product) => {
                  contenedorSlider += "<li class='splide__slide'>" +
@@ -18,7 +18,7 @@
                      "<div class='card-body'>" +
                      "<h5 class='card-title'>" + product.name + ' - ' + category.name + "</h5>" +
                      "<p class='card-text'>" + product.price + ' - ' + product.discount + "</p>" +
-                     "<a href='#'' class='btn btn-primary'>AGREGAR AL CARRITO</a>" +
+
                      "</div></div></li>"
              });
              contenedorSlider += "</ul></div></div></div>";
@@ -40,6 +40,16 @@
              perPage: 4,
              gap: 5,
              pagination: false,
+             breakpoints: {
+                 1412: { perPage: 3, gap: 4 },
+                 1018: { perPage: 2, gap: 3 },
+                 770: { perPage: 1, gap: 2 },
+
+             },
+             classes: {
+                 prev: "splide__arrow--prev arrow-slider-product arrow-product-slider-prev ",
+                 next: "splide__arrow--next arrow-slider-product arrow-product-slider-next ",
+             },
          });
          sliderCategoryProduct.mount();
      });

@@ -20,7 +20,7 @@ const assembleProduct = (data) => {
                                 <div class="card-body">
                                  <h5 class="card-title">${element.name} - ${element.name_category}</h5>
                                  <p class="card-text">${element.price} - ${element.discount}</p>
-                                 <a href="#" class="btn btn-primary">AGREGAR AL CARRITO</a>
+                                
                                 </div>
                              </div></li>`;
 
@@ -30,6 +30,16 @@ const assembleProduct = (data) => {
         perPage: 4,
         gap: 5,
         pagination: false,
+        breakpoints: {
+            1412: { perPage: 3, gap: 4 },
+            1018: { perPage: 2, gap: 3 },
+            770: { perPage: 1, gap: 2 },
+
+        },
+        classes: {
+            prev: "splide__arrow--prev arrow-slider-product arrow-product-slider-prev ",
+            next: "splide__arrow--next arrow-slider-product arrow-product-slider-next ",
+        },
     });
     products.mount(window.splide.Extensions);
 }
