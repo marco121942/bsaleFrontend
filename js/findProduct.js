@@ -27,7 +27,12 @@ function dataManagement(data) {
         let bodyResult = '';
         data.forEach(element => {
             bodyResult += ` <li class="result-item">
+             <div class="d-flex flex-row" >
                     <a href="#" class="result-link">
+                      <div class="p-2 text-center divimg" >
+                    <img src="${element.url_image}" class="img-thumbnail" width="50" height="50" >
+                </div>
+                  <div class="p-2">
                         <div class="result-title">
                             ${element.name}
                         </div>
@@ -35,6 +40,11 @@ function dataManagement(data) {
                              ${element.price} -   ${element.discount}
                         </div>
                     </a>
+                    </div>
+                      <div class="pt-4 float-left" >
+                     <button type='button' class='btn btn-primary form-control' onclick='addProduct(${element.id})'>Agregar</button>
+                </div>
+                    </div>
                 </li>`;
 
         });

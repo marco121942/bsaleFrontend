@@ -13,12 +13,14 @@
              contenedorSlider += "<div class='mt-5 mb-5'> <div class='card mb-2 text-center'><p class='fs-2 text-uppercase fw-semibold mt-2'>" + category.name + "</p></div><div class='splide' aria-label='All Products' id='categoryProducts" + index + "'><div class='splide__track'> <ul class='splide__list'>"
 
              category.products.forEach((product) => {
+
+
                  contenedorSlider += "<li class='splide__slide'>" +
                      " <div class='card min-vh- mh-75' style='width: 18rem;'><img height='250px' src='" + product.url_image + "' class='card-img-top' alt='...'>" +
                      "<div class='card-body'>" +
                      "<h5 class='card-title'>" + product.name + ' - ' + category.name + "</h5>" +
                      "<p class='card-text'>" + product.price + ' - ' + product.discount + "</p>" +
-
+                     "<button type='button' class='btn btn-primary form-control' onclick='addProduct(" + product.id + ")'>Agregar al carrito</button>" +
                      "</div></div></li>"
              });
              contenedorSlider += "</ul></div></div></div>";

@@ -20,7 +20,7 @@ const assembleProduct = (data) => {
                                 <div class="card-body">
                                  <h5 class="card-title">${element.name} - ${element.name_category}</h5>
                                  <p class="card-text">${element.price} - ${element.discount}</p>
-                                
+                                  <button type='button' class='btn btn-primary form-control' onclick='addProduct(${element.id})'>Agregar al carrito</button>
                                 </div>
                              </div></li>`;
 

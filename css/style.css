@@ -53,7 +53,6 @@
  }
  
  .result-list.show {
-     position: absolute;
      width: 640px;
      max-height: 250px;
      overflow-y: auto;

@@ -11,128 +11,160 @@
     <link rel="stylesheet" href="./library/splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
+
+
 </head>
 
 <body>
-    <div class="container   p-4">
+    <div class="row">
+        <span class="col-sm-9">
+    <div class="container p-4">
         <div class="search-box">
             <input class="search-input" type="text" id="query" onkeyup="searchProduct()" placeholder="Busque su producto ... ejm:'pisco'">
             <ul class="result-list hide" id="content-result">
             </ul>
         </div>
     </div>
-
-    <div class="container mt-5 mb-5 ">
-        <div class="card mb-2 text-center">
-            <p class='fs-2 text-uppercase fw-semibold mt-2'>TODOS LOS PRODUCTOS</p>
-        </div>
-
-        <div class="card mb-2">
-            <article class="card-group-item">
-                <header class="card-header">
-                    <h6 class="title">Filtro Avanzado</h6>
-                </header>
-                <div class="filter-content">
-                    <div class="row">
-                        <div class="col">
-                            <div class="card-body">
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();"  type="radio" name="filter" value="1-category">
-                                    <span class="form-check-label">
-                                        BEBIDA ENERGETICA
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="2-category">
-                                    <span class="form-check-label">
-                                        PISCO
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="3-category">
-                                    <span class="form-check-label">
-                                        RON
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="4-category">
-                                    <span class="form-check-label">
-                                        BEBIDA
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="5-category">
-                                    <span class="form-check-label">
-                                        SNACK
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="6-category">
-                                    <span class="form-check-label">
-                                        CERVEZA
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="7-category">
-                                    <span class="form-check-label">
-                                        VODKA
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-body">
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="1-discount">
-                                    <span class="form-check-label">
-                                        CON DESCUENTO
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="0-discount">
-                                    <span class="form-check-label">
-                                        SIN DESCUENTO
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-body">
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="1-imagen">
-                                    <span class="form-check-label">
-                                        PRODUCTOS QUE CONTENGA SU IMAGEN
-                                    </span>
-                                </label>
-                                <label class="form-check">
-                                    <input class="form-check-input" onclick="filterProduct();" type="radio" name="filter" value="0-imagen">
-                                    <span class="form-check-label">
-                                        PRODUCTOS SIN IMAGEN
-                                    </span>
-                                </label>
-
-                            </div>
-                        </div>
-                    </div>
+   
+       
+            <div class=" container mt-5 mb-5 ">
+                <div class="card mb-2 text-center">
+                    <p class='fs-2 text-uppercase fw-semibold mt-2'>TODOS LOS PRODUCTOS</p>
                 </div>
 
-            </article>
+                <div class="card mb-2">
+                    <article class="card-group-item">
+                        <header class="card-header">
+                            <h6 class="title">Filtro Avanzado</h6>
+                        </header>
+                        <div class="filter-content">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="1-category">
+                                            <span class="form-check-label">
+                                                BEBIDA ENERGETICA
+                                            </span>
+        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="2-category">
+                                            <span class="form-check-label">
+                                                PISCO
+                                            </span>
+                                        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="3-category">
+                                            <span class="form-check-label">
+                                                RON
+                                            </span>
+                                        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="4-category">
+                                            <span class="form-check-label">
+                                                BEBIDA
+                                            </span>
+                                        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="5-category">
+                                            <span class="form-check-label">
+                                                SNACK
+                                            </span>
+                                        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="6-category">
+                                            <span class="form-check-label">
+                                                CERVEZA
+                                            </span>
+                                        </label>
+        <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="7-category">
+                                            <span class="form-check-label">
+                                                VODKA
+                                            </span>
+                                        </label>
+    </div>
+    </div>
+    <div class="col">
+        <div class="card-body">
+            <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="1-discount">
+                                            <span class="form-check-label">
+                                                CON DESCUENTO
+                                            </span>
+                                        </label>
+            <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="0-discount">
+                                            <span class="form-check-label">
+                                                SIN DESCUENTO
+                                            </span>
+                                        </label>
         </div>
-        <div class="splide mt-4" aria-label="All Products" id="products">
-            <div class="splide__track">
-                <ul class="splide__list" id="productsContainer">
-                </ul>
-            </div>
+    </div>
+    <div class="col">
+        <div class="card-body">
+            <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="1-imagen">
+                                            <span class="form-check-label">
+                                                PRODUCTOS QUE CONTENGA SU IMAGEN
+                                            </span>
+                                        </label>
+            <label class="form-check">
+                                            <input class="form-check-input" onclick="filterProduct();" type="radio"
+                                                name="filter" value="0-imagen">
+                                            <span class="form-check-label">
+                                                PRODUCTOS SIN IMAGEN
+                                            </span>
+                                        </label>
+
         </div>
+    </div>
+    </div>
+    </div>
+
+    </article>
+    </div>
+    <div class="splide mt-4" aria-label="All Products" id="products">
+        <div class="splide__track">
+            <ul class="splide__list" id="productsContainer">
+            </ul>
+        </div>
+    </div>
     </div>
 
 
     <div class="container" id="containerProductCategory">
     </div>
+    </span>
+
+    <span class="col-sm-3 mt-5 h-100 border" style="position: sticky;top:0;z-index: 10;background-color: #ffffff;">
+            <h2 class="mt-4">Detalle de tu compra</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group test">
+
+
+            </ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: $ <span id="total"></span></p>
+
+    </span>
+    </div>
     <script>
         window.onload = function() {
             this.getProducts();
             this.getProductsCategory();
+            this.viewListItemCar();
         }
     </script>
 
@@ -145,6 +177,7 @@
     <script src="./js/getProductCategory.js"></script>
     <script src="./js/findProduct.js"></script>
     <script src="./js/filterProduct.js"></script>
+    <script src="./js/carrito.js"></script>
 </body>
 
 </html>
