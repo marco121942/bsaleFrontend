@@ -109,3 +109,9 @@
  .arrow-product-slider-next {
      right: -25px;
  }
+ 
+ .list-scroll {
+     width: 500;
+     max-height: 350px;
+     overflow-y: auto;
+ }
