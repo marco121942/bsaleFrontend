@@ -1,7 +1,12 @@
+// Funciòn encargado de agregar productos al localstorage, y a la vez realizar el cálculo del total que tiene que pagar
 function addProduct(data) {
+    // Guardamos en una variable el ID del producto que enviamos
     var idProduct = data;
+    // Obtenemos el Array de productos que se almacena en el localstorage
     var localProducts = JSON.parse(localStorage.getItem('products'));
+    // Obtenemos el Array del listado de productos que el cliente agrega
     var listCarrito = localStorage.getItem('carrito') === null ? [] : JSON.parse(localStorage.getItem('carrito'));
+    // start-  Obtenemos la información del producto según el ID que se manda
     var objProduct = {};
     localProducts.forEach((product) => {
         if (product.id === idProduct) {
@@ -13,13 +18,15 @@ function addProduct(data) {
             objProduct = objProductCarrito;
         }
     });
-
+    // end-  Obtenemos la información del producto según el ID que se manda
+    // start - Lógica para agregar un producto a la lista del carrito y modificar la cantidad que se agrega
+    //Si el carrito esta vacio,almacenamos por primera vez el producto que el cliente selecciona en el localStorage
     if (listCarrito.length === 0) {
         listCarrito.push(objProduct);
         localStorage.setItem('carrito', JSON.stringify(listCarrito));
     } else {
+        //Si el carrito contiene productos agregados, se procede a buscar el producto, si existe se modifica la cantidad "+1"y si el producto es nuevo se procede ha almacenarlo
         var result = listCarrito.find((value) => value.id === idProduct);
-
         if (result) {
             listCarrito.forEach((list) => {
                 if (list.id === idProduct) {
@@ -28,11 +35,12 @@ function addProduct(data) {
             });
             localStorage.setItem('carrito', JSON.stringify(listCarrito));
         } else {
-
             listCarrito.push(objProduct)
             localStorage.setItem('carrito', JSON.stringify(listCarrito));
         }
     }
+    // end - Lógica para agregar un producto a la lista del carrito y modificar la cantidad que se agrega
+    // Invocamos a la función viewListItemCar que es el encargado de imprimir el listado del carrito en el DOM
     this.viewListItemCar();
 }
 

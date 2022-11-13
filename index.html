@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="./library/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./library/splide-4.1.3/dist/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
-
-
 </head>
 
 <body>
+    <!-- start- Contenedor principal -->
     <div class="row">
+        <!-- start -Contenedor que almacena el buscador el filtro de productos y el listado de productos por categorìa -->
         <span class="col-sm-9">
-    <div class="container p-4">
-        <div class="search-box">
-            <input class="search-input" type="text" id="query" onkeyup="searchProduct()" placeholder="Busque su producto ... ejm:'pisco'">
-            <ul class="result-list hide" id="content-result">
-            </ul>
-        </div>
-    </div>
-   
-       
+            <!-- start - Contenedor del buscador de productos -->
+            <div class="container p-4">
+                <div class="search-box">
+                    <input class="search-input" type="text" id="query" onkeyup="searchProduct()"
+                        placeholder="Busque su producto ... ejm:'pisco'">
+                    <ul class="result-list hide" id="content-result">
+                    </ul>
+                </div>
+            </div>
+            <!-- end - Contenedor del buscador de productos -->
+            <!-- start-  Contenedor que contiene un filtro y un listado de productos, el filtrado funciona segùn las caracterìsticas que tiene un producto -->
             <div class=" container mt-5 mb-5 ">
                 <div class="card mb-2 text-center">
                     <p class='fs-2 text-uppercase fw-semibold mt-2'>TODOS LOS PRODUCTOS</p>
@@ -141,12 +142,14 @@
         </div>
     </div>
     </div>
-
-
+    <!-- end-  Contenedor que contiene un filtro y un listado de productos, el filtrado funciona segùn las caracterìsticas que tiene un producto -->
+    <!-- start -  Contenedor de todos los productos clasificados por su categorìa ala que pertenece -->
     <div class="container" id="containerProductCategory">
     </div>
+    <!-- end -  Contenedor de todos los productos clasificados por su categorìa ala que pertenece -->
     </span>
-
+    <!-- end -Contenedor que almacena el buscador el filtro de productos y el listado de productos por categorìa -->
+    <!-- start -Contenedor que almacena el detalle del carrito segùn los productos que vas agregando -->
     <span class="col-sm-3 mt-5 h-100 border" style="position: sticky;top:0;z-index: 10;background-color: #ffffff;">
             <h2 class="mt-4">Detalle de tu compra</h2>
             <!-- Elementos del carrito -->
@@ -159,8 +162,11 @@
             <p class="text-right">Total: $ <span id="total"></span></p>
 
     </span>
+    <!-- end -Contenedor que almacena el detalle del carrito segùn los productos que vas agregando -->
     </div>
+    <!-- end- Contenedor principal -->
     <script>
+        //Funciones que se ejecutan al momento que carga el index.html en el navegador
         window.onload = function() {
             this.getProducts();
             this.getProductsCategory();

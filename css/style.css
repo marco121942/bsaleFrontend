@@ -1,3 +1,5 @@
+ /* start - Estilo al body que contiene un efecto de linear gradient */
+ 
  body {
      font-family: sans-serif;
      background: linear-gradient(45deg, rgb(236, 236, 236), rgb(175, 175, 175), rgb(214, 214, 214), rgb(134, 134, 134));
@@ -17,6 +19,8 @@
          background-position: 0 50%;
      }
  }
+ /* end - Estilo al body que contiene un efecto de linear gradient */
+ /* start - Estilo para el scroll que se muestra como resultado del buscador */
  
  ::-webkit-scrollbar {
      width: 10px;
@@ -33,6 +37,8 @@
  ::-webkit-scrollbar-thumb:hover {
      background: #555;
  }
+ /* end - Estilo para el scroll que se muestra como resultado del buscador */
+ /* start-  Estilos del buscador y la lista de resultados */
  
  .search-box {
      position: relative;
@@ -109,9 +115,12 @@
  .arrow-product-slider-next {
      right: -25px;
  }
+ /* end-  Estilos del buscador y la lista de resultados */
+ /* start -  Estilo del detalle de la compra,sobre el listado */
  
  .list-scroll {
      width: 500;
      max-height: 350px;
      overflow-y: auto;
  }
+ /* end -  Estilo del detalle de la compra,sobre el listado */

@@ -1,3 +1,4 @@
+// start -Función searchProduct se encargada de llamar al servicio de 'search/product', que es el encargado de devolver información según las palabras claves que ingreso el cliente en el input
 function searchProduct() {
     let inputValue = document.getElementById("query").value;
     let input = document.getElementById("content-result");
@@ -15,14 +16,14 @@ function searchProduct() {
         input.classList.add('hide');
     }
 }
-
+// end -Función searchProduct se encargada de llamar al servicio de 'search/product', que es el encargado de devolver información según las palabras claves que ingreso el cliente en el input
+// start - Una vez obtengamos respuesta del BAACK procedemos a transformar la data para poder mostrarle al cliente
 function dataManagement(data) {
+    // start -  Controlamos el estado del listado de resultados que realizo el cliente
     let input = document.getElementById("content-result");
-
     if (data.length !== 0) {
         input.classList.remove('hide');
         input.classList.add('show');
-        //Manejamos la para para poder insertarla en el HTML
 
         let bodyResult = '';
         data.forEach(element => {
@@ -42,7 +43,7 @@ function dataManagement(data) {
                     </a>
                     </div>
                       <div class="pt-4 float-left" >
-                     <button type='button' class='btn btn-primary form-control' onclick='addProduct(${element.id})'>Agregar</button>
+                     <p class="text-primary"  style="cursor: pointer;" onclick='addProduct(${element.id})'>Agregar al carrito</p>
                 </div>
                     </div>
                 </li>`;
@@ -55,4 +56,6 @@ function dataManagement(data) {
         input.classList.add('hide');
 
     }
+    // end -  Controlamos el estado del listado de resultados que realizo el cliente
 }
+// end - Una vez obtengamos respuesta del BAACK procedemos a transformar la data para poder mostrarle al cliente
