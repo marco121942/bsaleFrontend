@@ -11,7 +11,7 @@ Podrá encontrar el proyecto BACKEND en el siguiente enlace
 
 ### Explicación del ejercicio.
 
-El desafío brindado por bsale esta compuesto por dos proyectos:
+El desafío brindado por bsale está compuesto por dos proyectos:
 
 1. FRONTEND : 
 
@@ -55,7 +55,7 @@ Resultado esperado:
 
 - Listado de productos clasificados por categoría:
 
-En esta sección el usuario podrá visualizar productos clasificados por su categoría a la que pertenece e igualemnte podrá agregar al carrito de compras.
+En esta sección el usuario podrá visualizar productos clasificados por su categoría a la que pertenece e igualmente podrá agregar al carrito de compras.
 
 
 Resultado esperado:
@@ -68,9 +68,9 @@ Resultado esperado:
 
 - Carrito de compras:
 
-En esta sección el usuario podrá visualizar todos sus agregados al carrito ala vez que podrá visualizar
+En esta sección el usuario podrá visualizar todos sus agregados al carrito a la vez que podrá visualizar
 
-la cantidad que esta agregando y el total que suma el carrito, y ala vez puede quitar el producto del carrito.
+la cantidad que está agregando y el total que suma el carrito, y a la vez puede quitar el producto del carrito.
 
 Resultado esperado:
 
